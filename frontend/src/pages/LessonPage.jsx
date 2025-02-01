@@ -98,7 +98,7 @@ const LessonPage = () => {
   return (
     <>
       <LessonNavbar />
-      <div className="p-6 h-screen bg-gradient-to-r from-blue-400 to-purple-500  shadow-md text-white ">
+      <div className="p-6  bg-gradient-to-r from-blue-400 to-purple-500  shadow-md text-white ">
         <h2 className="text-2xl font-bold text-center mb-4">
           🚀 Learn Python the Fun Way!
         </h2>
@@ -177,7 +177,7 @@ const LessonPage = () => {
           >
             {isDescriptionLoading ? "Loading..." : "📝 Check My Code"}
           </button>
-          
+
           {feedback && (
             <div className="mt-4 p-4 bg-yellow-300 text-black rounded-lg">
               <h4 className="text-lg font-semibold">Feedback:</h4>

@@ -9,7 +9,7 @@ const HeroSection = () => {
 
   return (
     <div id="home" className="w-full h-screen ">
-    <div className="w-full h-full bg-[url('2.jpg')] bg-cover relative">
+    <div className="w-full h-full bg-[url('/2.jpg')] bg-cover relative">
         <div className="w-full h-full bg-black opacity-70">
         </div>
         <div className="p-5 w-full absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]
