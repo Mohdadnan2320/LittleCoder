@@ -64,7 +64,7 @@ const Navbar = () => {
             <svg
               onClick={() => setShowSidebar(!showSidebar)}
               className="flex items-center cursor-pointer lg:hidden "
-              fill="#0000"
+              fill="#000000"
               viewBox="0 0 100 80"
               width="30"
               height="30"
