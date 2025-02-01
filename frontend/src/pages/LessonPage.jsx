@@ -177,11 +177,26 @@ const LessonPage = () => {
           >
             {isDescriptionLoading ? "Loading..." : "📝 Check My Code"}
           </button>
-
+          
           {feedback && (
             <div className="mt-4 p-4 bg-yellow-300 text-black rounded-lg">
               <h4 className="text-lg font-semibold">Feedback:</h4>
-              <p>{feedback}</p>
+              <p className="mt-4 p-2 border rounded bg-gray-100">
+                {feedback
+                  .split("\n")
+                  .filter((point) => point.includes("**"))
+                  .map((point, index) => {
+                    const cleanPoint = point.replace(/\*\*/g, "").trim();
+                    return (
+                      <li
+                        key={index}
+                        className="text-gray-700 flex items-start"
+                      >
+                        <span className=" mr-2"></span> {cleanPoint}
+                      </li>
+                    );
+                  })}
+              </p>
             </div>
           )}
 
